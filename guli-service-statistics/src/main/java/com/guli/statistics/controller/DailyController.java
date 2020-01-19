@@ -35,5 +35,18 @@ public class DailyController {
 	    return Result.ok();
 	}
 
+	/**
+	 * 统计数据
+	 * @param begin 开始日期
+	 * @param end 结束日期
+	 * @param type 统计类型
+	 * @return
+	 */
+	@GetMapping("/show-chart/{begin}/{end}/{type}")
+	public Result showChart(@PathVariable String begin,@PathVariable String end ,@PathVariable String type){
+	Map<String,Object>	map = dailyService.getChartData(begin,end,type);
+	return new Result().ok(map);
+	}
+
 }
 

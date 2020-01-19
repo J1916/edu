@@ -62,8 +62,42 @@ public class DailyServiceImpl extends ServiceImpl<DailyMapper, Daily> implements
 		baseMapper.insert(daily);
 	}
 
+
 	@Override
 	public Map<String, Object> getChartData(String begin, String end, String type) {
-		return null;
+
+		QueryWrapper query = new QueryWrapper();
+		query.select(type,"date_calculated");
+		query.between("date_calculated",begin,end);
+
+		List<Daily> daylist = baseMapper.selectList(query);
+
+		Map<String, Object> map = new HashMap<>();
+		List<Integer> dataList = new ArrayList<Integer>();
+		List<String> dateList = new ArrayList<String>();
+
+		map.put("dataList",dataList);
+		map.put("dateList",dateList);
+
+		for (Daily daily: daylist) {
+			dateList.add(daily.getDateCalculated());
+			switch (type){
+				case "login_num" :
+					   dataList.add(daily.getLoginNum()); //登录人数
+					break;
+				case "register_num" :
+					dataList.add(daily.getRegisterNum());//注册人数
+					break;
+				case "video_view_num" :
+					dataList.add(daily.getVideoViewNum()); //每日播放视频数
+					break;
+				case "course_num" :
+					dataList.add(daily.getCourseNum()); //每日新增课程数
+					break;
+				default:
+					break;
+			}
+		}
+		return map;
 	}
 }
