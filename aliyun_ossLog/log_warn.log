@@ -1,0 +1,1 @@
+2020-01-15 21:26:34.294 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised

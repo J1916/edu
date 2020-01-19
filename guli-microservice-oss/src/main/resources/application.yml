@@ -1,0 +1,19 @@
+server:
+  port: 8330
+  #\u5207\u6362\u914D\u7F6E\u6587\u4EF6\u4E3A\u751F\u4EA7\u73AF\u5883
+spring:
+  profiles:
+    active: dev
+  application:
+    name: guli-aliyunoss
+
+#\u963F\u91CC\u4E91 OSS
+aliyun:
+   oss:
+     file:
+       endpoint: oss-cn-beijing.aliyuncs.com
+       accessKeyId: LTAIF7P8NZPm2ztV
+       accessKeySecret: hKTpPclwTGHH2BzVoBARhmIk8eJfus
+       #bucket(\u5B58\u50A8\u7A7A\u95F4)\u53EF\u4EE5\u5728\u63A7\u5236\u53F0\u521B\u5EFA\uFF0C\u4E5F\u53EF\u4EE5\u4F7F\u7528java\u4EE3\u7801\u521B\u5EFA
+       bucketName: 1916-file
+       fileHost: avator

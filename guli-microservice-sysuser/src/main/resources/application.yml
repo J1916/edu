@@ -1,0 +1,14 @@
+server:
+  port: 8320
+  #\u5207\u6362\u914D\u7F6E\u6587\u4EF6\u4E3A\u751F\u4EA7\u73AF\u5883
+spring:
+  profiles:
+    active: dev
+  application:
+    name: guli-sysuser
+  devtools: true
+
+  # \u8BBE\u7F6E\u65E5\u5FD7\u7EA7\u522B
+  logging:
+      level:
+        root: INFO

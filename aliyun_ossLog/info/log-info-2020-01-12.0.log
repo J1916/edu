@@ -1,0 +1,142 @@
+2020-01-12 20:09:35.258 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Starting AliyunOssApplication on DESKTOP-RH16LBN with PID 16360 (F:\guli\guli-microservice-oss\target\classes started by Nike in F:\guli)
+2020-01-12 20:09:35.264 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - The following profiles are active: dev
+2020-01-12 20:09:35.333 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-12 20:09:35.334 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-12 20:09:37.107 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8330 (http)
+2020-01-12 20:09:37.120 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:09:37.121 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-12 20:09:37.121 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 20:09:37.244 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-12 20:09:37.244 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1909 ms
+2020-01-12 20:09:37.330 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-01-12 20:09:37.344 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-12 20:10:30.260 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Starting AliyunOssApplication on DESKTOP-RH16LBN with PID 16284 (F:\guli\guli-microservice-oss\target\classes started by Nike in F:\guli)
+2020-01-12 20:10:30.264 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - The following profiles are active: dev
+2020-01-12 20:10:30.336 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-12 20:10:30.336 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-12 20:10:32.215 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8330 (http)
+2020-01-12 20:10:32.226 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:10:32.226 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-12 20:10:32.227 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 20:10:32.368 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-12 20:10:32.368 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2031 ms
+2020-01-12 20:10:32.452 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-01-12 20:10:32.477 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-12 20:11:02.484 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Starting AliyunOssApplication on DESKTOP-RH16LBN with PID 18488 (F:\guli\guli-microservice-oss\target\classes started by Nike in F:\guli)
+2020-01-12 20:11:02.488 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - The following profiles are active: dev
+2020-01-12 20:11:02.565 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-12 20:11:02.566 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-12 20:11:04.332 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8330 (http)
+2020-01-12 20:11:04.344 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:11:04.345 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-12 20:11:04.345 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 20:11:04.470 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-12 20:11:04.470 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1904 ms
+2020-01-12 20:11:04.885 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-12 20:11:04.987 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 20:11:05.169 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-01-12 20:11:05.194 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-01-12 20:11:05.247 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-01-12 20:11:05.446 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:11:05.486 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8330 (http) with context path ''
+2020-01-12 20:11:05.492 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Started AliyunOssApplication in 3.965 seconds (JVM running for 5.051)
+2020-01-12 20:13:07.563 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 20:13:10.840 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Starting AliyunOssApplication on DESKTOP-RH16LBN with PID 5260 (F:\guli\guli-microservice-oss\target\classes started by Nike in F:\guli)
+2020-01-12 20:13:10.844 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - The following profiles are active: dev
+2020-01-12 20:13:10.909 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-12 20:13:10.909 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-12 20:13:12.501 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8330 (http)
+2020-01-12 20:13:12.512 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:13:12.513 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-12 20:13:12.514 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 20:13:12.657 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-12 20:13:12.657 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1748 ms
+2020-01-12 20:13:13.051 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-12 20:13:13.148 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 20:13:13.361 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-01-12 20:13:13.382 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-01-12 20:13:13.424 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-01-12 20:13:13.640 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:13:13.672 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8330 (http) with context path ''
+2020-01-12 20:13:13.676 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Started AliyunOssApplication in 3.777 seconds (JVM running for 5.145)
+2020-01-12 20:18:26.843 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 20:18:30.173 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Starting AliyunOssApplication on DESKTOP-RH16LBN with PID 12636 (F:\guli\guli-microservice-oss\target\classes started by Nike in F:\guli)
+2020-01-12 20:18:30.177 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - The following profiles are active: dev
+2020-01-12 20:18:30.253 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-12 20:18:30.254 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-12 20:18:32.154 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8330 (http)
+2020-01-12 20:18:32.173 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:18:32.174 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-12 20:18:32.174 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 20:18:32.294 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-12 20:18:32.294 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2040 ms
+2020-01-12 20:18:32.777 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-12 20:18:32.928 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 20:18:33.150 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-01-12 20:18:33.171 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-01-12 20:18:33.222 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-01-12 20:18:33.386 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:18:33.416 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8330 (http) with context path ''
+2020-01-12 20:18:33.420 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Started AliyunOssApplication in 4.184 seconds (JVM running for 5.573)
+2020-01-12 20:27:44.928 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 20:27:48.963 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Starting AliyunOssApplication on DESKTOP-RH16LBN with PID 17132 (F:\guli\guli-microservice-oss\target\classes started by Nike in F:\guli)
+2020-01-12 20:27:48.966 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - The following profiles are active: dev
+2020-01-12 20:27:49.018 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-12 20:27:49.019 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-12 20:27:50.853 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8330 (http)
+2020-01-12 20:27:50.863 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:27:50.864 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-12 20:27:50.864 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 20:27:51.006 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-12 20:27:51.006 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1987 ms
+2020-01-12 20:27:51.539 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-12 20:27:51.680 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 20:27:51.918 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-01-12 20:27:51.944 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-01-12 20:27:52.012 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-01-12 20:27:52.281 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8330"]
+2020-01-12 20:27:52.317 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8330 (http) with context path ''
+2020-01-12 20:27:52.321 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Started AliyunOssApplication in 4.246 seconds (JVM running for 5.368)
+2020-01-12 21:30:39.125 [http-nio-8330-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-12 21:30:39.126 [http-nio-8330-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-01-12 21:30:39.138 [http-nio-8330-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-01-12 21:30:50.306 [http-nio-8330-exec-3] INFO  com.aliyun.oss - [Server]Unable to execute HTTP request: The specified bucket does not exist.
+[ErrorCode]: NoSuchBucket
+[RequestId]: 5E1B1F869EB80731342BB8E9
+[HostId]: 1919-file.oss-cn-beijing.aliyuncs.com
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchBucket</Code>
+  <Message>The specified bucket does not exist.</Message>
+  <RequestId>5E1B1F869EB80731342BB8E9</RequestId>
+  <HostId>1919-file.oss-cn-beijing.aliyuncs.com</HostId>
+  <BucketName>1919-file</BucketName>
+</Error>
+
+2020-01-12 21:32:34.648 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 21:32:35.168 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Starting AliyunOssApplication on DESKTOP-RH16LBN with PID 17132 (F:\guli\guli-microservice-oss\target\classes started by Nike in F:\guli)
+2020-01-12 21:32:35.169 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - The following profiles are active: dev
+2020-01-12 21:32:35.958 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8330 (http)
+2020-01-12 21:32:35.959 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8330"]
+2020-01-12 21:32:35.959 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-12 21:32:35.959 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 21:32:35.982 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-12 21:32:35.982 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 806 ms
+2020-01-12 21:32:36.134 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-12 21:32:36.187 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 21:32:36.242 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-01-12 21:32:36.243 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-01-12 21:32:36.251 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-01-12 21:32:36.268 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8330"]
+2020-01-12 21:32:36.280 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8330 (http) with context path ''
+2020-01-12 21:32:36.281 [restartedMain] INFO  com.guli.aliyun_oss.AliyunOssApplication - Started AliyunOssApplication in 1.191 seconds (JVM running for 3889.328)
+2020-01-12 21:32:36.299 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-01-12 21:33:25.359 [http-nio-8330-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-12 21:33:25.360 [http-nio-8330-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-01-12 21:33:25.369 [http-nio-8330-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-01-12 23:19:25.121 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

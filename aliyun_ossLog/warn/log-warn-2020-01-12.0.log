@@ -1,0 +1,17 @@
+2020-01-12 20:09:37.326 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController': Unsatisfied dependency expressed through field 'fileService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'fileServiceimpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'aliyun.oss.file.fileHost' in value "${aliyun.oss.file.fileHost}"
+2020-01-12 20:10:32.447 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController': Unsatisfied dependency expressed through field 'fileService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'fileServiceimpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'aliyun.oss.file.fileHost' in value "${aliyun.oss.file.fileHost}"
+2020-01-12 20:11:05.035 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-01-12 20:13:13.194 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-01-12 20:18:33.000 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-01-12 20:27:51.736 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-01-12 21:32:35.906 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 21:32:36.196 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-01-12 22:49:12.028 [http-nio-8330-exec-6] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: SocketException
+2020-01-12 22:49:23.667 [http-nio-8330-exec-9] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: UnknownHost
+2020-01-12 22:49:23.667 [http-nio-8330-exec-6] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: UnknownHost
+2020-01-12 22:49:24.268 [http-nio-8330-exec-9] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: UnknownHost
+2020-01-12 22:49:24.868 [http-nio-8330-exec-6] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: UnknownHost
+2020-01-12 22:49:25.469 [http-nio-8330-exec-9] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: UnknownHost
+2020-01-12 22:49:27.268 [http-nio-8330-exec-6] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: UnknownHost
+2020-01-12 22:49:27.870 [http-nio-8330-exec-9] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: UnknownHost
+2020-01-12 22:55:05.127 [http-nio-8330-exec-3] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: SocketTimeout
