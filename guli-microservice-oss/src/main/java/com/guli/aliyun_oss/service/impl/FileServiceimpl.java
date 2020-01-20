@@ -3,6 +3,7 @@ package com.guli.aliyun_oss.service.impl;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.CannedAccessControlList;
 import com.guli.aliyun_oss.service.FileService;
+import com.guli.aliyun_oss.util.ConstantPropertiesUtil;
 import com.guli.common.constants.ResultCodeEnum;
 import com.guli.common.exception.GuliException;
 import com.guli.common.util.ExceptionUtil;
@@ -81,7 +82,7 @@ public class FileServiceimpl implements FileService {
             String fileName = UUID.randomUUID().toString();
             String fileType = oldFileName.substring(oldFileName.lastIndexOf("."));
             String newFileName = fileName+fileType; //新文件名
-            String fileUrl = fileHost+"/"+filePath+"/"+newFileName;
+            String fileUrl = ConstantPropertiesUtil.FILE_HOST +"/"+filePath+"/"+newFileName;
             //文件上传到阿里云oss
             ossClient.putObject(bucketName,fileUrl,inputStream);
             //返回文件存储url地址
