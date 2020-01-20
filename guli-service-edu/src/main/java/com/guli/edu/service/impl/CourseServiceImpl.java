@@ -1,11 +1,14 @@
 package com.guli.edu.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.guli.common.exception.GuliException;
 import com.guli.edu.entity.Course;
 import com.guli.edu.entity.CourseDescription;
 import com.guli.edu.entity.CourseInfoForm;
 import com.guli.edu.mapper.CourseDescriptionMapper;
 import com.guli.edu.mapper.CourseMapper;
+import com.guli.edu.query.CourseQuery;
 import com.guli.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
@@ -93,5 +96,37 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         baseMapper.updateById(course);
         //修改课程详情
         courseDescriptionMapper.updateById(courseDescription);
+    }
+
+    /**
+     * 分页+条件查询课程
+     * @param coursePage
+     * @param courseQuery
+     */
+    @Override
+    public void pageQuery(Page<Course> coursePage, CourseQuery courseQuery) {
+
+        String subjectParentId = courseQuery.getSubjectParentId(); //课程类别 1级类别
+        String subjectId = courseQuery.getSubjectId();//课程类别 2级类别
+        String teacherId = courseQuery.getTeacherId(); //选择教师
+        String title = courseQuery.getTitle(); //课程标题
+
+        QueryWrapper<Course> courseQueryWrapper = new QueryWrapper<>();
+        courseQueryWrapper.orderByAsc("gmt_create");
+        if(StringUtils.isNotBlank(title)){
+            courseQueryWrapper.like("title",title);
+        }
+        if(StringUtils.isNotBlank(teacherId)){
+            courseQueryWrapper.eq("teacher_id",teacherId);
+        }
+        if(StringUtils.isNotBlank(subjectId)){
+            courseQueryWrapper.gt("subject_id",subjectId);
+        }
+        if(StringUtils.isNotBlank(subjectParentId)){
+            courseQueryWrapper.gt("subject_parent_id",subjectParentId);
+        }
+        //查询课程基础
+        baseMapper.selectPage(coursePage,courseQueryWrapper);
+
     }
 }
