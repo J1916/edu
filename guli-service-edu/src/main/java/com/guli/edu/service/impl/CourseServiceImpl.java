@@ -75,4 +75,23 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         courseInfoForm.setDescription(courseDescription.getDescription());
         return courseInfoForm;
     }
+
+    /**
+     * 更新课程
+     * @param courseInfoForm
+     */
+    @Override
+    public void updateCourseInfoById(CourseInfoForm courseInfoForm) {
+        Course course = new Course();
+        //拷贝对象
+        BeanUtils.copyProperties(courseInfoForm,course);
+
+        CourseDescription courseDescription = new CourseDescription();
+        BeanUtils.copyProperties(courseInfoForm,courseDescription);
+
+        //修改课程基础信息
+        baseMapper.updateById(course);
+        //修改课程详情
+        courseDescriptionMapper.updateById(courseDescription);
+    }
 }

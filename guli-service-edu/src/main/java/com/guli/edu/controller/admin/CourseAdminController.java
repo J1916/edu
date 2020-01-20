@@ -27,6 +27,7 @@ public class CourseAdminController {
      * @param courseInfoForm
      * @return
      */
+    @ApiOperation("添加课程")
     @PostMapping("/save-course-info")
    public Result saveCourseInfo(@ApiParam(name = "courseInfoForm" ,value="课程基本信息",required = true) @RequestBody CourseInfoForm courseInfoForm){
         String courseId = courseService.saveCourseInfo(courseInfoForm);
@@ -38,6 +39,15 @@ public class CourseAdminController {
    public Result getCoursInfoById(@ApiParam(name="id" ,value="课程id" ,required = true) @PathVariable String id){
        CourseInfoForm courseInfoForm = courseService.getCourseInfoFormById(id);
        return new Result().ok(courseInfoForm);
+   }
+
+   @PutMapping("/updateCourseInfo/{id}")
+   @ApiOperation("更新课程")
+   public Result updateCourseInfoById(
+           @ApiParam(name = "courseInfoForm" ,value="课程基本信息",required = true) @RequestBody CourseInfoForm courseInfoForm,
+           @ApiParam(name = "id" ,value="课程id",required = true) @PathVariable String id ){
+        courseService.updateCourseInfoById(courseInfoForm);
+        return Result.ok();
    }
 
 }
