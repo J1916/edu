@@ -1,5 +1,6 @@
 package com.guli.edu.service.impl;
 
+import com.guli.common.exception.GuliException;
 import com.guli.edu.entity.Course;
 import com.guli.edu.entity.CourseDescription;
 import com.guli.edu.entity.CourseInfoForm;
@@ -7,6 +8,8 @@ import com.guli.edu.mapper.CourseDescriptionMapper;
 import com.guli.edu.mapper.CourseMapper;
 import com.guli.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,5 +50,29 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         courseDescription.setDescription(courseInfoForm.getDescription()); //课程详情
         courseDescriptionMapper.insert(courseDescription);
         return course.getId();
+    }
+
+    @Override
+    public CourseInfoForm getCourseInfoFormById(String id) {
+
+        //查询课程基础信息
+        Course course = baseMapper.selectById(id);
+        if(course == null){
+            throw new GuliException(20001, "数据不存在");
+        }
+
+        //查询课程详情
+        CourseDescription courseDescription = courseDescriptionMapper.selectById(id);
+
+        if(courseDescription == null){
+            throw new GuliException(20001, "数据不完整");
+        }
+
+        CourseInfoForm courseInfoForm = new CourseInfoForm();
+        //拷贝对象
+        BeanUtils.copyProperties(course,courseInfoForm);
+        //详情
+        courseInfoForm.setDescription(courseDescription.getDescription());
+        return courseInfoForm;
     }
 }

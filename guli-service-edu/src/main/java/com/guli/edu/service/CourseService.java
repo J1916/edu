@@ -15,4 +15,5 @@ import com.guli.edu.entity.CourseInfoForm;
 public interface CourseService extends IService<Course> {
 
     String saveCourseInfo(CourseInfoForm courseInfoForm);
+    CourseInfoForm getCourseInfoFormById(String id);
 }
