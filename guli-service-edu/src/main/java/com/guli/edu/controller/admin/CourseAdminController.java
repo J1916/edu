@@ -83,4 +83,11 @@ public class CourseAdminController {
    }
 
 
+   @DeleteMapping("/{id}")
+   @ApiOperation("根据id删除课程")
+   public Result deleteCourseInfo(@ApiParam(name="id" ,value="课程id" ,required = true) @PathVariable String id){
+        courseService.deleteCourseInfoById(id);
+        return Result.ok();
+   }
+
 }

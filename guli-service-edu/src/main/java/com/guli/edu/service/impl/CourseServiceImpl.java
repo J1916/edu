@@ -3,15 +3,17 @@ package com.guli.edu.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.guli.common.exception.GuliException;
-import com.guli.edu.entity.Course;
-import com.guli.edu.entity.CourseDescription;
-import com.guli.edu.entity.CourseInfoForm;
+import com.guli.edu.entity.*;
+import com.guli.edu.mapper.ChapterMapper;
 import com.guli.edu.mapper.CourseDescriptionMapper;
 import com.guli.edu.mapper.CourseMapper;
+import com.guli.edu.mapper.VideoMapper;
 import com.guli.edu.query.CourseQuery;
 import com.guli.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
+import com.guli.edu.service.VideoService;
+import com.netflix.discovery.converters.Auto;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +33,12 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
 
     @Autowired
     CourseDescriptionMapper courseDescriptionMapper;
+
+    @Autowired
+    VideoMapper videoMapper;
+
+    @Autowired
+    ChapterMapper chapterMapper;
 
     /**
      * 添加课程信息和课程详情
@@ -96,6 +104,32 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         baseMapper.updateById(course);
         //修改课程详情
         courseDescriptionMapper.updateById(courseDescription);
+    }
+
+    /**
+     * 删除课程
+     * @param id
+     */
+    @Override
+    public void deleteCourseInfoById(String id) {
+
+        //根据课程id删除课程所有视频
+        QueryWrapper<Video> videoQueryWrapper = new QueryWrapper<>();
+        videoQueryWrapper.eq("course_id",id); //课程id
+        videoMapper.delete(videoQueryWrapper);
+
+        //根据课程id删除视频所有章节
+        QueryWrapper<Chapter> chapterQueryWrapper = new QueryWrapper<>();
+        chapterQueryWrapper.eq("course_id",id); //课程id
+        chapterMapper.delete(chapterQueryWrapper);
+
+
+        //删除课程详情
+        courseDescriptionMapper.deleteById(id);
+
+        //删除课程基础信息
+        baseMapper.deleteById(id);
+
     }
 
     /**

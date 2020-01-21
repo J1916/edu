@@ -19,6 +19,6 @@ public interface CourseService extends IService<Course> {
     String saveCourseInfo(CourseInfoForm courseInfoForm);
     CourseInfoForm getCourseInfoFormById(String id);
     void updateCourseInfoById (CourseInfoForm courseInfoForm);
-
+    void deleteCourseInfoById (String id);
     void pageQuery(Page<Course> coursePage, CourseQuery courseQuery);
 }
