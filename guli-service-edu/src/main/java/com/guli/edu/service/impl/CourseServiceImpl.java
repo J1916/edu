@@ -120,10 +120,10 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
             courseQueryWrapper.eq("teacher_id",teacherId);
         }
         if(StringUtils.isNotBlank(subjectId)){
-            courseQueryWrapper.gt("subject_id",subjectId);
+            courseQueryWrapper.eq("subject_id",subjectId);
         }
         if(StringUtils.isNotBlank(subjectParentId)){
-            courseQueryWrapper.gt("subject_parent_id",subjectParentId);
+            courseQueryWrapper.eq("subject_parent_id",subjectParentId);
         }
         //查询课程基础
         baseMapper.selectPage(coursePage,courseQueryWrapper);
