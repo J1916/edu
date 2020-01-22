@@ -105,7 +105,7 @@ public class CourseAdminController {
      * @param id
      * @return
      */
-    @PostMapping("/publishCourseById/{id}")
+    @PutMapping("/publishCourseById/{id}")
     @ApiOperation("根据id发布课程")
     public Result publishCourseById(@ApiParam(name = "id", value = "课程id", required = true) @PathVariable String id){
         courseService.publishCourseById(id);
