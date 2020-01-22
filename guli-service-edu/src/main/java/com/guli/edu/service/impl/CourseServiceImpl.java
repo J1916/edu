@@ -13,6 +13,7 @@ import com.guli.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import com.guli.edu.service.VideoService;
+import com.guli.edu.vo.CoursePublishVo;
 import com.netflix.discovery.converters.Auto;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -39,6 +40,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
 
     @Autowired
     ChapterMapper chapterMapper;
+
 
     /**
      * 添加课程信息和课程详情
@@ -162,5 +164,24 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         //查询课程基础
         baseMapper.selectPage(coursePage,courseQueryWrapper);
 
+    }
+
+    @Override
+    public CoursePublishVo getCoursePublishVoById(String id) {
+        return baseMapper.selectCoursePublishVoById(id);
+    }
+
+    /**
+     * 根据id发布课程
+     * @param id
+     */
+    @Override
+    public void publishCourseById(String id) {
+
+        Course course = new Course();
+        course.setId(id);
+        //课程状态 Draft未发布  Normal已发布
+        course.setStatus(Course.COURSE_NORMAL);
+        baseMapper.updateById(course);
     }
 }

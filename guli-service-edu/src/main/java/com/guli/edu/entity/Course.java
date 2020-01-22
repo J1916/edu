@@ -36,8 +36,9 @@ import lombok.experimental.Accessors;
 public class Course implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    public static final String COURSE_DRAFT = "Draft";
-    public static final String COURSE_NORMAL = "Normal";
+//    课程状态 Draft未发布  Normal已发布
+    public static final String COURSE_DRAFT = "Draft"; //未发布
+    public static final String COURSE_NORMAL = "Normal"; //Normal
 
     @ApiModelProperty(value = "课程ID")
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
